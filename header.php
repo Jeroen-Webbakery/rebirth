@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link href="<?php echo get_site_url(); ?>/wp-content/themes/rebirth-child/css/slick.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/rebirth-child/js/isotope.pkgd.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/rebirth-child/js/slick.min.js"></script>
-	
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous">
 
 	<?php wp_head(); ?>
 <!-- Global site tag (gtag.js) - Google Analytics -->
