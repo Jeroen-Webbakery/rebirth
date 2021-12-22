@@ -1,3 +1,3 @@
-# Riv child
+# Rebirth Theme
 
-RIV website child
+Rebirth Development Theme
