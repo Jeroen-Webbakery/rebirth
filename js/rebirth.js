@@ -40,15 +40,10 @@ $(document).ready(function() {
 		$(".floortab").removeClass("active");
 	});
 
-	$('.gallery').slickLightbox({
-			itemSelector: '> a'
-		});
+	// $('.gallery').slickLightbox({
+	// 		itemSelector: '> a'
+	// 	});
 
-	$('video').on("loadeddata", function() {
-		$('video').attr('controlsList', 'nodownload');
-		$('video').bind('contextmenu',function() { return false; });
-		$('video').attr('disablePictureInPicture', 'true');
-	});
 
 	var accordion = (function(){
 
