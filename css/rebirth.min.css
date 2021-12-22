@@ -15394,11 +15394,11 @@ a {
   text-shadow: none;
 }
 
-#header {
+.home #header {
   position: relative;
   height: calc(100vh - 40px);
 }
-#header .header_video {
+.home #header .header_video {
   width: 100%;
   height: calc(100vh - 40px);
   -o-object-fit: cover;
@@ -15407,7 +15407,7 @@ a {
   z-index: -1;
   cursor: none !important;
 }
-#header .slider_text {
+.home #header .slider_text {
   margin-top: 40px;
   position: absolute;
   top: 50%;
@@ -15415,7 +15415,7 @@ a {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-#header .slider_text h1 {
+.home #header .slider_text h1 {
   text-shadow: 0.5px 0.5px #3e3e3e;
 }
 
