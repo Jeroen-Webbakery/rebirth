@@ -1,0 +1,433 @@
+@media only screen and (max-width: 1025px) {
+
+  p, .f-24, .f-24 p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  body {
+    margin: 0px;
+  }
+
+  .sticky {
+    .hamburgerTop, .hamburgerMiddle, .hamburgerBottom {
+      background: #4d4d4d;;
+    }
+  }
+
+.hamburger {
+  width: 30px;
+  height: 30px;
+}
+
+.hamburgerTop, .hamburgerMiddle, .hamburgerBottom {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+
+
+.hamburgerTop, .hamburgerBottom {
+  -webkit-transition: margin-top 0.3s ease 0.4s, -webkit-transform 0.4s ease;
+  transition: margin-top 0.3s ease 0.4s, -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease, margin-top 0.3s ease 0.4s;
+  transition: transform 0.4s ease, margin-top 0.3s ease 0.4s, -webkit-transform 0.4s ease;
+}
+
+.hamburgerMiddle {
+  -webkit-transition: opacity 0.2s ease 0.5s;
+  transition: opacity 0.2s ease 0.5s;
+}
+
+/* Margin between the layers */
+.hamburgerTop {
+  margin-top: 7px;
+}
+
+.hamburgerMiddle {
+  margin-top: 15px;
+}
+
+.hamburgerBottom {
+  margin-top: 23px;
+}
+
+.hamburgerTop.open, .hamburgerBottom.open {
+  -webkit-transition: margin-top 0.3s ease, -webkit-transform 0.4s ease 0.3s;
+  transition: margin-top 0.3s ease, -webkit-transform 0.4s ease 0.3s;
+  transition: margin-top 0.3s ease, transform 0.4s ease 0.3s;
+  transition: margin-top 0.3s ease, transform 0.4s ease 0.3s, -webkit-transform 0.4s ease 0.3s;
+}
+
+.hamburgerTop.open {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: 15px;
+}
+
+.hamburgerMiddle.open {
+  opacity: 0;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.hamburgerBottom.open {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: 15px;
+}
+
+
+    .navbar-brand, .hamburger {
+      z-index: 20;
+    }
+    #wrapper-navbar, .navbar, .sticky .navbar {
+      height: 80px!important;
+      top: 0px;
+    }
+
+    .custom-logo-link img, .sticky .navbar .container svg {
+      max-height: 55px;
+    }
+  
+    .mobilenav {
+      height: 100%;
+      position: fixed;
+      top: -200%;
+      background-color: #fff;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+  
+    #main-menu {
+      height: max-content;
+      height: -moz-max-content;
+      width: 100%;
+      margin: 0;
+    }
+  
+    .menu-item  {
+      margin: 25px 0;
+    }
+
+    .nav-link {
+      width: max-content;
+      margin: 0 auto;
+    }
+  
+    .mobilenav.show {
+      top: 0px;
+      z-index: 19;
+    }
+
+    .nav-link {
+      color: #4d4d4d;
+      border-bottom: 1px solid transparent;
+    }
+
+    .current-menu-item a, .mobilenav ul .nav-link:hover {
+      color: #4d4d4d;
+      border-bottom: 1px solid #4d4d4d;
+    }
+
+    .mw_500 {
+      max-width: unset;
+    }
+
+    #intro {
+      padding: 75px 0px;
+    }
+
+    #projects {
+      margin: 0;
+    }
+
+  .side_title_left,
+.side_title_right {
+  font-size: 40px;
+  line-height: 38px;
+  display: none;
+}
+
+.project_title {
+  text-align: center;
+}
+
+#projects {
+  padding-bottom: 50px;
+  &::after {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.project_slider_arrows {
+  bottom: 0;
+  right: 0;
+}
+
+#news_overview {
+  margin-top: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &::after {
+    display: none;
+  }
+}
+
+#real_estate {
+  padding: 0;
+}
+
+.realestate_slider_block {
+  position: relative;
+  top: unset;
+  margin-top: 15px;
+}
+
+.realestate_slider .next-arrow {
+  right: 0;
+}
+
+.subpage_bg {
+  height: 400px;
+}
+
+#whatwedo_intro, #whowheare_intro {
+  margin: 0;
+  padding: 50px 0;
+}
+
+#content_1, #content_2{
+  padding: 50px 0 0 0;
+  margin: 0
+}
+
+#content_1 {
+  .col-sm-12 {
+    &:first-child {
+      order: 2
+    }
+  }
+}
+
+
+.content_slider_block.first,
+.content_slider_block.second {
+  position: unset;
+}
+
+.content_slider_block.first {
+    order: 1;
+    margin-bottom: 15px;
+}
+.content_slider_block.second {
+    margin-bottom: 15px;
+}
+
+#team_overview {
+  padding: 50px 0 0 0;
+}
+
+.team_row {
+  margin-top: 0;
+}
+
+#contact {
+  padding: 50px 0;
+}
+
+.project.odd:first-child {
+  margin-top: 0;
+}
+
+.project.odd::after {
+  width: 100%;
+}
+
+.odd_project {
+  margin-bottom: 50px;
+}
+
+.project.even::after {
+  display: none;
+}
+
+.next_oddproject, .next_evenproject {
+  top: 50%;
+  right: 30px;
+  left: unset;
+  bottom: unset;
+  transform: translate(0%, -50%);
+  z-index: 17;
+  font-size: 50px;
+  color: #4d4d4d;
+}
+
+.prev_oddproject, .prev_evenproject {
+  color: #4d4d4d;
+  top: 50%;
+  left: 30px;
+  bottom: unset;
+  transform: translate(0%, -50%);
+  z-index: 17;
+  font-size: 50px;
+}
+
+.project.even {
+  margin-bottom: 0;
+}
+
+
+.team_member {
+
+  &:nth-child(even) {
+    .team_info {
+      left: unset;
+      right: 15px;
+    }
+  }
+}
+
+
+
+
+   .site-info {
+     padding: 15px;
+   }
+
+
+    #header {
+      position: relative;
+    
+    }
+    
+    .home_slider {
+      height: 70vh;
+    }
+    
+    .home_slide {
+      height: 70vh;
+    }
+
+  
+    .quote_block_width {
+      max-width: unset;
+    }
+
+    #werkwijze {
+        padding: 50px 0;
+    }
+
+    #template_content, #template_content_aanmelden {
+        padding: 50px 0;
+    }
+  
+    .blocks, .blocks:hover {
+        border: none;
+    }
+
+    .error_bg {
+      height: 75vh;
+      background-size: cover !important;
+      background-position: center!important;
+
+    
+    
+      .h1 {
+        margin-bottom: 25px;
+        font-size: 60px;
+        line-height: 60px;
+      }
+    
+      p {
+        font-size: 38px;
+        line-height: 46px;
+      }
+    
+    }
+
+  
+    .cta {
+      width: 100%;
+    }
+    .cta h3 {
+      margin-bottom: 25px;
+    }
+    .footer h3 {
+      margin-top: 25px;
+    }
+
+    .bottombar_wrapper {
+      padding: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    h1, .h1 {
+      font-size: 34px;
+      line-height: 42px;
+    }
+
+    h2, .h2 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    .project_slider_arrows {
+      right: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+
+
+    .home_slider {
+      height: 60vh;
+    }
+    
+    .home_slide {
+      height: 60vh;
+      background-position: center center !important;
+    }
+
+    #intro {
+      padding: 50px 0px;
+    }
+
+
+    .menu-item  {
+        margin: 15px 0;
+      }
+      #all_news_overview {
+        padding: 50px 0;
+      }
+
+      .project_img {
+        height: 350px;
+      }
+      
+      .odd_project {
+        margin-top: 0;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+      }
+      .even_project {
+        padding-bottom: 25px;
+      }
+}

@@ -1,0 +1,10 @@
+@function ratio-vw($value, $group: 'lg') {
+    $groupVal: 1800; // The design width
+    @return (($value / $groupVal) / 0.01px) * 1vw;
+}
+  
+@mixin media-breakpoint-lg() {
+    @media (max-width: 1799px) and (min-width: 1024px) {
+      @content;
+    }
+}

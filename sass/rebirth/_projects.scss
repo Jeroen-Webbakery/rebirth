@@ -1,0 +1,130 @@
+#project_overview {
+  position: relative;
+}
+
+.project.odd:first-child {
+  margin-top: -250px;
+
+  @include media-breakpoint-lg() {
+    margin-top: - ratio-vw(250px);
+  }
+}
+
+
+.project.odd {
+  position: relative;
+  &::after {
+    content: "";
+    background-color: $greenbg;
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+.project.even {
+  position: relative;
+  margin-bottom: 150px;
+
+  @include media-breakpoint-lg() {
+    margin-bottom: ratio-vw(150px);
+  }
+
+  &::after {
+    content: "";
+    background-color: $lightgray;
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+.odd_project {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  position: relative;
+  margin-bottom: 150px;
+
+  @include media-breakpoint-lg() {
+    padding-top: ratio-vw(65px);
+    padding-bottom: ratio-vw(65px);
+    margin-bottom: ratio-vw(150px);
+  }
+
+  .col-sm-12 {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.even_project {
+  padding-bottom: 65px;
+  position: relative;
+
+  @include media-breakpoint-lg() {
+    padding-bottom: ratio-vw(65px);
+  }
+
+  .col-sm-12 {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+
+.project_img {
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.next_oddproject,
+.prev_oddproject {
+  position: absolute;
+  bottom: -75px;
+  font-size: 34px;
+  left: 0;
+  color: #000;
+
+    @include media-breakpoint-lg() {
+      font-size: ratio-vw(34px);
+      bottom: - ratio-vw(75px);
+    }
+  }
+
+  .next_oddproject {
+    margin-left: 30px;
+
+    @include media-breakpoint-lg() {
+      margin-left: ratio-vw(30px);
+    }
+  }
+
+  .next_evenproject,
+  .prev_evenproject {
+    position: absolute;
+    bottom: -75px;
+    font-size: 34px;
+    right: 0;
+    color: #000;
+
+    @include media-breakpoint-lg() {
+      bottom: - ratio-vw(75px);
+      font-size: ratio-vw(34px);
+    }
+  }
+
+  .prev_evenproject {
+    margin-right: 30px;
+
+    @include media-breakpoint-lg() {
+      margin-right: ratio-vw(30px);
+    }
+  }
