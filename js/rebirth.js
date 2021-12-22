@@ -40,6 +40,22 @@ $(document).ready(function() {
 		$(".floortab").removeClass("active");
 	});
 
+
+	$(".sound-off").click(function() {
+		$("video").prop('muted', false);
+		$(".on").addClass("active");
+		$(".off").removeClass("active");
+		$(".sound-off").removeClass("active");
+		$(".sound-on").addClass("active");
+	});
+
+	$(".sound-on").click(function() {
+		$("video").prop('muted', true);
+		$(".off").addClass("active");
+		$(".on").removeClass("active");
+		$(".sound").removeClass("on").addClass("off");
+	});
+
 	// $('.gallery').slickLightbox({
 	// 		itemSelector: '> a'
 	// 	});

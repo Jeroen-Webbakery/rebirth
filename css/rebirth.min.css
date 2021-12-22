@@ -15408,7 +15408,7 @@ a {
   cursor: none !important;
 }
 .home #header .slider_text {
-  margin-top: 40px;
+  margin-top: 150px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -15417,6 +15417,21 @@ a {
 }
 .home #header .slider_text h1 {
   text-shadow: 0.5px 0.5px #3e3e3e;
+}
+.home #header .sound-off, .home #header .sound-on {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  background: #ccc6bb;
+  padding: 20px;
+  cursor: pointer;
+  display: none;
+}
+.home #header .sound-off i, .home #header .sound-on i {
+  font-size: 28px;
+}
+.home #header .sound-off.active, .home #header .sound-on.active {
+  display: block;
 }
 
 #intro {
