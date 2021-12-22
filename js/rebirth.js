@@ -254,16 +254,16 @@ window.onload = function() {
 	})
 };
 
-$(document).ready(function(){
-	$('.gallery').slickLightbox({
-		itemSelector: '> a',
-		lazy: true,
-		arrows: true,
-		navigateByKeyboard: true,
-		infinite : true,
-
-	});
-});
+// $(document).ready(function(){
+// 	$('.gallery').slickLightbox({
+// 		itemSelector: '> a',
+// 		lazy: true,
+// 		arrows: true,
+// 		navigateByKeyboard: true,
+// 		infinite : true,
+//
+// 	});
+// });
 
 $(document).ready(function(){
 	$('.iconslider').slick({
