@@ -43,17 +43,14 @@ $(document).ready(function() {
 
 	$(".sound-off").click(function() {
 		$("video").prop('muted', false);
-		$(".on").addClass("active");
-		$(".off").removeClass("active");
 		$(".sound-off").removeClass("active");
 		$(".sound-on").addClass("active");
 	});
 
 	$(".sound-on").click(function() {
 		$("video").prop('muted', true);
-		$(".off").addClass("active");
-		$(".on").removeClass("active");
-		$(".sound").removeClass("on").addClass("off");
+		$(".sound-on").removeClass("active");
+		$(".sound-off").addClass("active");
 	});
 
 	// $('.gallery').slickLightbox({

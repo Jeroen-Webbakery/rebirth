@@ -22,7 +22,7 @@
                   <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/videos/rebirthklein.mp4" type="video/mp4">
                   Your browser does not support the video tag.
               </video>
-              <a class="sound-on"><i class="fas fa-volume-slash"></i></a>
+              <a class="sound-on"><i class="fas fa-volume-up"></i></a>
               <a class="sound-off active"><i class="fas fa-volume-slash"></i></a>
               <div class="slider_text w-100 text-white">
                   <h1 class="pb-3"><?php the_field( 'text_over_slider' ); ?></h1>
