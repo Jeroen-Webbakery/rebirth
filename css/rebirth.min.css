@@ -14674,12 +14674,13 @@ figure.woocommerce-product-gallery__wrapper {
     text-align: center;
     display: flex;
     align-items: center;
+    transition: all 0.3s ease-in-out;
   }
 
   #main-menu {
     height: -webkit-max-content;
-    height: max-content;
     height: -moz-max-content;
+    height: max-content;
     width: 100%;
     margin: 0;
   }
@@ -16208,12 +16209,13 @@ div.wpforms-container-full .wpforms-form textarea {
     text-align: center;
     display: flex;
     align-items: center;
+    transition: all 0.3s ease-in-out;
   }
 
   #main-menu {
     height: -webkit-max-content;
-    height: max-content;
     height: -moz-max-content;
+    height: max-content;
     width: 100%;
     margin: 0;
   }

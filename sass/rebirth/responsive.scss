@@ -107,11 +107,11 @@
       text-align: center;
       display: flex;
       align-items: center;
+      transition: all .3s ease-in-out;
     }
   
     #main-menu {
       height: max-content;
-      height: -moz-max-content;
       width: 100%;
       margin: 0;
     }
