@@ -11732,18 +11732,16 @@ figure.woocommerce-product-gallery__wrapper {
 .accordion {
   font-size: 1rem;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 10px;
   border-radius: 5px;
-  margin-bottom: 10px;
   line-height: 26px;
 }
 
 .accordion-header {
   font-size: 30px;
-  font-family: 'Rift demi';
   letter-spacing: 0;
   line-height: 70px;  
-  color: #fff;
+  color: #4d4d4d;
   cursor: pointer;
   transition: all .3s;
   display: flex;
@@ -11768,7 +11766,7 @@ figure.woocommerce-product-gallery__wrapper {
 .accordion-body__contents {
   padding: 1.5em 0;
   font-family: "Roboto light";
-  color: #fff;
+  color: #4d4d4d;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0;
