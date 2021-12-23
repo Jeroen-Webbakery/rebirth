@@ -135,8 +135,11 @@
 
   .projects {
     button {
-      border: 1px solid $darkgray;
+      background: $darkgray;
       font-family: 'WulkanDisplay Black', sans-serif;
+      color: #fff;
+      padding: 5px;
+
     }
   }
 }
@@ -145,6 +148,10 @@
   .label, .project_content {
     font-family: 'WulkanDisplay Black', sans-serif;
     color: $darkgray;
+  }
+
+  .element-item {
+    margin-bottom: 25px;
   }
 
 }
