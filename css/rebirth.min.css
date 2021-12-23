@@ -16050,11 +16050,11 @@ a {
 #project_content::before {
   content: "";
   background: lightgray;
-  width: 50%;
+  width: 70%;
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
 }
 #project_content .column_right {
   position: relative;
