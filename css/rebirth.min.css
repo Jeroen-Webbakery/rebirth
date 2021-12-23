@@ -16026,6 +16026,8 @@ a {
 }
 #project_overview .label, #project_overview .project_content {
   font-family: "WulkanDisplay Black", sans-serif;
+}
+#project_overview .project_content {
   color: #4d4d4d;
 }
 #project_overview .element-item {
