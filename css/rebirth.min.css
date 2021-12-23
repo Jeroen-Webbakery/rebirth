@@ -14982,6 +14982,10 @@ figure.woocommerce-product-gallery__wrapper {
     padding-bottom: 25px;
   }
 
+  #single_project_intro {
+    padding: 75px 0 250px 0;
+  }
+
   #project_content .column_right::before {
     display: none;
   }
@@ -16593,6 +16597,10 @@ div.wpforms-container-full .wpforms-form textarea {
 
   .even_project {
     padding-bottom: 25px;
+  }
+
+  #single_project_intro {
+    padding: 75px 0 250px 0;
   }
 
   #project_content .column_right::before {
