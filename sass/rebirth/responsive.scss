@@ -436,10 +436,14 @@
     }
 
     #project_content {
+      background: $darkgray;
+
+      &::before {
+        display: none;
+      }
+
       .column_right {
-        &::before {
-          display: none;
-        }
+
       }
     }
 }
