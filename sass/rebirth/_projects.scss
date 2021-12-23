@@ -130,6 +130,10 @@
   }
 }
 
+#header {
+  position: relative;
+}
+
 #projectintro {
   padding: 50px 0;
 
@@ -138,8 +142,8 @@
       background: $darkgray;
       font-family: 'WulkanDisplay Black', sans-serif;
       color: #fff;
-      padding: 5px;
-
+      padding: 5px 10px;
+      border: none;
     }
   }
 }
