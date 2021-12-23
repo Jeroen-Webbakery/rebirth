@@ -145,6 +145,15 @@
 }
 
 #project_overview {
+  .label {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    background: $darkgray;
+    color: #fff;
+    padding: 5px;
+  }
+
   .label, .project_content {
     font-family: 'WulkanDisplay Black', sans-serif;
     color: $darkgray;
@@ -152,6 +161,10 @@
 
   .element-item {
     margin-bottom: 25px;
+  }
+
+  .project_img {
+    margin-bottom: 15px;
   }
 
 }

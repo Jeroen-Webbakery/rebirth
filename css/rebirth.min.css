@@ -16011,12 +16011,23 @@ a {
   padding: 5px;
 }
 
+#project_overview .label {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  background: #4d4d4d;
+  color: #fff;
+  padding: 5px;
+}
 #project_overview .label, #project_overview .project_content {
   font-family: "WulkanDisplay Black", sans-serif;
   color: #4d4d4d;
 }
 #project_overview .element-item {
   margin-bottom: 25px;
+}
+#project_overview .project_img {
+  margin-bottom: 15px;
 }
 
 .team_member {
