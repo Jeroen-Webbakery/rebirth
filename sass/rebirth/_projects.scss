@@ -13,6 +13,7 @@
 
 .project.odd {
   position: relative;
+
   &::after {
     content: "";
     background-color: $greenbg;
@@ -93,38 +94,57 @@
   left: 0;
   color: #000;
 
-    @include media-breakpoint-lg() {
-      font-size: ratio-vw(34px);
-      bottom: - ratio-vw(75px);
+  @include media-breakpoint-lg() {
+    font-size: ratio-vw(34px);
+    bottom: - ratio-vw(75px);
+  }
+}
+
+.next_oddproject {
+  margin-left: 30px;
+
+  @include media-breakpoint-lg() {
+    margin-left: ratio-vw(30px);
+  }
+}
+
+.next_evenproject,
+.prev_evenproject {
+  position: absolute;
+  bottom: -75px;
+  font-size: 34px;
+  right: 0;
+  color: #000;
+
+  @include media-breakpoint-lg() {
+    bottom: - ratio-vw(75px);
+    font-size: ratio-vw(34px);
+  }
+}
+
+.prev_evenproject {
+  margin-right: 30px;
+
+  @include media-breakpoint-lg() {
+    margin-right: ratio-vw(30px);
+  }
+}
+
+#projectintro {
+  padding: 50px 0;
+
+  .projects {
+    button {
+      border: 1px solid $darkgray;
+      font-family: 'WulkanDisplay Black', sans-serif;
     }
   }
+}
 
-  .next_oddproject {
-    margin-left: 30px;
-
-    @include media-breakpoint-lg() {
-      margin-left: ratio-vw(30px);
-    }
+#project_overview {
+  .label, .project_content {
+    font-family: 'WulkanDisplay Black', sans-serif;
+    color: $darkgray;
   }
 
-  .next_evenproject,
-  .prev_evenproject {
-    position: absolute;
-    bottom: -75px;
-    font-size: 34px;
-    right: 0;
-    color: #000;
-
-    @include media-breakpoint-lg() {
-      bottom: - ratio-vw(75px);
-      font-size: ratio-vw(34px);
-    }
-  }
-
-  .prev_evenproject {
-    margin-right: 30px;
-
-    @include media-breakpoint-lg() {
-      margin-right: ratio-vw(30px);
-    }
-  }
+}
