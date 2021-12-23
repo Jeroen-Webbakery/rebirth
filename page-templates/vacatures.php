@@ -58,7 +58,7 @@
 
 
             <div class="accordionButton accordion-header js-accordion-header"><?php the_title(); ?></div>
-		         <div class="accordionContent accordion-body__contents f-20">
+		         <div class="accordionContent accordion-body__contents f-28">
 					<?php if ( $omschrijving = get_field( 'omschrijving' ) ) : ?>
 						<?php echo $omschrijving; ?>
 					<?php endif; ?>
