@@ -14981,6 +14981,10 @@ figure.woocommerce-product-gallery__wrapper {
   .even_project {
     padding-bottom: 25px;
   }
+
+  #project_content .column_right::before {
+    display: none;
+  }
 }
 @font-face {
   font-family: "WulkanDisplay Regular";
@@ -16050,7 +16054,7 @@ a {
 #project_content::before {
   content: "";
   background: lightgray;
-  width: 70%;
+  width: 60%;
   height: 100%;
   position: absolute;
   top: 0;
@@ -16589,5 +16593,9 @@ div.wpforms-container-full .wpforms-form textarea {
 
   .even_project {
     padding-bottom: 25px;
+  }
+
+  #project_content .column_right::before {
+    display: none;
   }
 }

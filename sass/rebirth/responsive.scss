@@ -430,4 +430,12 @@
       .even_project {
         padding-bottom: 25px;
       }
+
+    #project_content {
+      .column_right {
+        &::before {
+          display: none;
+        }
+      }
+    }
 }
