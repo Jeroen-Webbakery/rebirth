@@ -182,9 +182,11 @@
 }
 
 #project_content {
+  padding: 50px 0;
+  position: relative;
 
   .column_right {
-    postion: relative;
+    position: relative;
 
     &::before {
       content: "";

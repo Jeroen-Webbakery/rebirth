@@ -16042,8 +16042,12 @@ a {
   padding: 50px 0;
 }
 
+#project_content {
+  padding: 50px 0;
+  position: relative;
+}
 #project_content .column_right {
-  postion: relative;
+  position: relative;
 }
 #project_content .column_right::before {
   content: "";

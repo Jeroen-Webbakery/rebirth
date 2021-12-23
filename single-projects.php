@@ -39,7 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				class="fas fa-chevron-left ml-0 mr-3"></i><?php _e('Terug naar het overzicht', 'rebirth'); ?></a>
 		<div class="row">
 			<div class="offset-lg-2"></div>
-			<div class="col-sm-12 col-lg-8 f-28 text_darkgray text-center column_right">
+			<div class="col-sm-12 col-lg-8 f-28 text_darkgray text-center">
 				<h1 class="h3 mb-3"><?php the_title();?></h1>
 				<?php the_content();?>
 			</div>
@@ -60,7 +60,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php endif; ?>
 				</div>
 			</div>
-			<div class="col-sm-12 col-lg-6 pl-lg-3 d-flex align-items-center">
+			<div class="col-sm-12 col-lg-6 pl-lg-3 d-flex align-items-center column_right">
 				<div class="project_content">
 					<div class="f-24">
 						<?php the_field( 'content' ); ?>
