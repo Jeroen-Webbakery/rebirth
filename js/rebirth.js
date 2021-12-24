@@ -40,9 +40,20 @@ $(document).ready(function() {
 		$(".floortab").removeClass("active");
 	});
 
-	$('.gallery').slickLightbox({
-			itemSelector: '> a'
-		});
+	$(".sound-off").click(function() {
+		$("video").prop('muted', false);
+		$(".sound-off").removeClass("active");
+		$(".sound-on").addClass("active");
+	});
+
+	$(".sound-on").click(function() {
+		$("video").prop('muted', true);
+		$(".sound-on").removeClass("active");
+		$(".sound-off").addClass("active");
+	});
+
+
+
 
 	var accordion = (function(){
 
@@ -253,16 +264,16 @@ window.onload = function() {
 	})
 };
 
-$(document).ready(function(){
-	$('.gallery').slickLightbox({
-		itemSelector: '> a',
-		lazy: true,
-		arrows: true,
-		navigateByKeyboard: true,
-		infinite : true,
-
-	});
-});
+// $(document).ready(function(){
+// 	$('.gallery').slickLightbox({
+// 		itemSelector: '> a',
+// 		lazy: true,
+// 		arrows: true,
+// 		navigateByKeyboard: true,
+// 		infinite : true,
+//
+// 	});
+// });
 
 $(document).ready(function(){
 	$('.iconslider').slick({
