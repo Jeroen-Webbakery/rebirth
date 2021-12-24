@@ -53,9 +53,7 @@ $(document).ready(function() {
 	});
 
 
-	// $('.gallery').slickLightbox({
-	// 		itemSelector: '> a'
-	// 	});
+
 
 	var accordion = (function(){
 

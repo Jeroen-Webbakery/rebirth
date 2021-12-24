@@ -231,56 +231,6 @@ $greenbg: #ccc6bb;
 
 }
 
-
-.home {
-  #header {
-    position: relative;
-    height: calc(100vh - 40px);
-
-    .header_video {
-      width: 100%;
-      height: calc(100vh - 40px);
-      object-fit: cover;
-      position: absolute;
-      z-index: -1;
-      cursor: none !important;
-    }
-
-
-    .slider_text {
-      margin-top: 200px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-
-      h1 {
-        text-shadow: 0.5px 0.5px #3e3e3e;
-      }
-    }
-
-    .sound-off, .sound-on {
-      position: absolute;
-      right: 15px;
-      bottom: 0;
-      background: $greenbg;
-      padding: 20px;
-      cursor: pointer;
-      display: none;
-
-      i {
-        font-size: 28px;
-      }
-
-      &.active {
-        display: block;
-      }
-    }
-  }
-}
-
-
 .home_slider {
   height: 92vh;
 }
@@ -300,10 +250,18 @@ $greenbg: #ccc6bb;
 }
 
 #intro {
-  padding: 100px 0px 450px 0px;
+  padding: 100px 0 450px 0;
 
   @include media-breakpoint-lg() {
     padding: ratio-vw(100px) 0 ratio-vw(450px) 0;
+  }
+}
+
+#projectintro {
+  padding: 100px 0;
+
+  @include media-breakpoint-lg() {
+    padding: ratio-vw(100px);
   }
 }
 
@@ -725,3 +683,56 @@ $greenbg: #ccc6bb;
 .bottombar_wrapper a, .bottombar_wrapper p {
   color: $darkgray;
 }
+
+
+.home {
+  #header {
+    position: relative;
+    height: calc(100vh - 40px);
+
+    .header_video {
+      width: 100%;
+      height: calc(100vh - 40px);
+      object-fit: cover;
+      position: absolute;
+      z-index: -1;
+      cursor: none !important;
+    }
+
+
+    .slider_text {
+      margin-top: 200px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      h1 {
+        text-shadow: 0.5px 0.5px #3e3e3e;
+      }
+    }
+
+    .sound-off, .sound-on {
+      position: absolute;
+      right: 15px;
+      bottom: 0;
+      background: $greenbg;
+      padding: 20px;
+      cursor: pointer;
+      display: none;
+
+      i {
+        font-size: 28px;
+      }
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+
+
+
+
