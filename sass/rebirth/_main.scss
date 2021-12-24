@@ -734,5 +734,122 @@ $greenbg: #ccc6bb;
 }
 
 
+#content_1:after, #content_2:after, #content_3:after, .accordion-header:after {
+  display: none
+}
+
+
+.accordion {
+  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 26px;
+  margin: 0 auto 10px;
+  width: 100%
+}
+
+@media (max-width: 1799px)and (min-width: 1024px) {
+  .accordion {
+    border-radius: .2777777778vw;
+    line-height: 1.4444444444vw;
+    margin-bottom: .5555555556vw
+  }
+}
+
+.accordion-header {
+  align-items: center;
+  background-color: #ccc6bb;
+  border-bottom: 1px solid #fff;
+  color: #4d4d4d;
+  cursor: pointer;
+  display: flex;
+  font-display: swap;
+  font-family: WulkanDisplay Black;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 38px;
+  padding: 15px 25px;
+  transition: all .3s
+}
+
+@media (max-width: 1799px)and (min-width: 1024px) {
+  .accordion-header {
+    font-size: 1.6666666667vw;
+    line-height: 2.1111111111vw;
+    padding: .8333333333vw 1.3888888889vw
+  }
+}
+
+.accordion__item .accordion__item {
+  border-bottom: 1px solid rgba(0, 0, 0, .08)
+}
+
+.accordion-header:hover {
+  position: relative;
+  z-index: 5
+}
+
+.accordion-body {
+  background: #ccc6bb;
+  display: none
+}
+
+.accordion-body__contents {
+  color: #4d4d4d;
+  font-display: swap;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 36px;
+  padding: 1.5em 15px
+}
+
+@media (max-width: 1799px)and (min-width: 1024px) {
+  .accordion-body__contents {
+    font-size: 1.3333333333vw;
+    line-height: 2vw
+  }
+}
+
+.accordion__item.active:last-child .accordion-header {
+  border-radius: none
+}
+
+.accordion:first-child > .accordion__item > .accordion-header {
+  border-bottom: 1px solid transparent
+}
+
+.accordion-header {
+  margin-top: 20px;
+  position: relative
+}
+
+.accordion-header:after {
+  content: "+";
+  float: right;
+  font-size: 70px;
+  font-weight: 700;
+  position: absolute;
+  right: 25px;
+  transition: all .3s
+}
+
+.accordion-header.on:after {
+  content: "-"
+}
+
+.accordion__item.active > .accordion-header:after {
+  transform: rotate(-180deg)
+}
+
+.accordion__item.active .accordion-header {
+  background: #000
+}
+
+.accordion__item .accordion__item .accordion-header {
+  background: #f1f1f1;
+  color: #353535
+}
+
 
 
