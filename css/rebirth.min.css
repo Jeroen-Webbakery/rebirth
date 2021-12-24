@@ -15389,6 +15389,46 @@ a {
   position: relative;
 }
 
+.home #header {
+  position: relative;
+  height: calc(100vh - 40px);
+}
+.home #header .header_video {
+  width: 100%;
+  height: calc(100vh - 40px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  cursor: none !important;
+}
+.home #header .slider_text {
+  margin-top: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.home #header .slider_text h1 {
+  text-shadow: 0.5px 0.5px #3e3e3e;
+}
+.home #header .sound-off, .home #header .sound-on {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  background: #ccc6bb;
+  padding: 20px;
+  cursor: pointer;
+  display: none;
+}
+.home #header .sound-off i, .home #header .sound-on i {
+  font-size: 28px;
+}
+.home #header .sound-off.active, .home #header .sound-on.active {
+  display: block;
+}
+
 .home_slider {
   height: 92vh;
 }

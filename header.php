@@ -19,11 +19,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://use.typekit.net/xxn4iwc.css">
-	<script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/rebirth-child/js/jquery-3.6.0.min.js"></script>
-	<link href="<?php echo get_site_url(); ?>/wp-content/themes/rebirth-child/css/aos.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo get_site_url(); ?>/wp-content/themes/rebirth-child/css/slick.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/rebirth-child/js/isotope.pkgd.min.js"></script>
-	<script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/rebirth-child/js/slick.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri();?>/assets/js/jquery-3.6.0.min.js"></script>
+	<link href="<?php echo get_stylesheet_directory_uri();?>/assets/css/aos.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo get_stylesheet_directory_uri();?>/assets/css/slick.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri();?>/assets/js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri();?>/assets/js/js/slick.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+          integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous">
 	
 
 	<?php wp_head(); ?>
