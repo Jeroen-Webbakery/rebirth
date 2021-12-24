@@ -60,7 +60,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php endif; ?>
 				</div>
 			</div>
-			<div class="col-sm-12 col-lg-6 pl-lg-3 d-flex align-items-center column_right">
+			<div class="col-sm-12 col-lg-6 pl-lg-3 d-flex align-items-center">
 				<div class="project_content">
 					<div class="f-24">
 						<?php the_field( 'content' ); ?>

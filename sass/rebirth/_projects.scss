@@ -13,7 +13,6 @@
 
 .project.odd {
   position: relative;
-
   &::after {
     content: "";
     background-color: $greenbg;
@@ -94,113 +93,38 @@
   left: 0;
   color: #000;
 
-  @include media-breakpoint-lg() {
-    font-size: ratio-vw(34px);
-    bottom: - ratio-vw(75px);
-  }
-}
-
-.next_oddproject {
-  margin-left: 30px;
-
-  @include media-breakpoint-lg() {
-    margin-left: ratio-vw(30px);
-  }
-}
-
-.next_evenproject,
-.prev_evenproject {
-  position: absolute;
-  bottom: -75px;
-  font-size: 34px;
-  right: 0;
-  color: #000;
-
-  @include media-breakpoint-lg() {
-    bottom: - ratio-vw(75px);
-    font-size: ratio-vw(34px);
-  }
-}
-
-.prev_evenproject {
-  margin-right: 30px;
-
-  @include media-breakpoint-lg() {
-    margin-right: ratio-vw(30px);
-  }
-}
-
-#header {
-  position: relative;
-}
-
-#projectintro {
-  padding: 50px 0;
-
-  .projects {
-    button {
-      background: $darkgray;
-      font-family: 'WulkanDisplay Black', sans-serif;
-      color: #fff;
-      padding: 5px 10px;
-      border: none;
+    @include media-breakpoint-lg() {
+      font-size: ratio-vw(34px);
+      bottom: - ratio-vw(75px);
     }
   }
-}
 
-#project_overview {
-  .label {
+  .next_oddproject {
+    margin-left: 30px;
+
+    @include media-breakpoint-lg() {
+      margin-left: ratio-vw(30px);
+    }
+  }
+
+  .next_evenproject,
+  .prev_evenproject {
     position: absolute;
-    top: 15px;
-    left: 25px;
-    background: $darkgray;
-    color: #fff;
-    padding: 5px;
-  }
-
-  .label, .project_content {
-    font-family: 'WulkanDisplay Black', sans-serif;
-  }
-
-  .project_content {
-    color: $darkgray;
-  }
-
-  .element-item {
-    margin-bottom: 25px;
-  }
-
-  .project_img {
-    margin-bottom: 15px;
-  }
-
-}
-
-#single_project_intro {
-  position: relative;
-  padding: 50px 0 250px 0
-
-}
-
-#project_content {
-  padding: 50px 0;
-  position: relative;
-  margin-top: -250px;
-  margin-bottom: 100px;
-
-  &::before {
-    content: "";
-    background: lightgray;
-    width: 60%;
-    height: 100%;
-    position: absolute;
-    top: 0;
+    bottom: -75px;
+    font-size: 34px;
     right: 0;
+    color: #000;
+
+    @include media-breakpoint-lg() {
+      bottom: - ratio-vw(75px);
+      font-size: ratio-vw(34px);
+    }
   }
 
-  .column_right {
-    position: relative;
-  }
+  .prev_evenproject {
+    margin-right: 30px;
 
-  .
-}
+    @include media-breakpoint-lg() {
+      margin-right: ratio-vw(30px);
+    }
+  }

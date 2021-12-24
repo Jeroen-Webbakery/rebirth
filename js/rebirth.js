@@ -40,7 +40,6 @@ $(document).ready(function() {
 		$(".floortab").removeClass("active");
 	});
 
-
 	$(".sound-off").click(function() {
 		$("video").prop('muted', false);
 		$(".sound-off").removeClass("active");
@@ -53,9 +52,7 @@ $(document).ready(function() {
 		$(".sound-off").addClass("active");
 	});
 
-	// $('.gallery').slickLightbox({
-	// 		itemSelector: '> a'
-	// 	});
+
 
 
 	var accordion = (function(){

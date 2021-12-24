@@ -107,11 +107,11 @@
       text-align: center;
       display: flex;
       align-items: center;
-      transition: all .3s ease-in-out;
     }
   
     #main-menu {
       height: max-content;
+      height: -moz-max-content;
       width: 100%;
       margin: 0;
     }
@@ -430,20 +430,4 @@
       .even_project {
         padding-bottom: 25px;
       }
-
-    #single_project_intro {
-      padding: 75px 0 250px 0;
-    }
-
-    #project_content {
-      background: $darkgray;
-
-      &::before {
-        display: none;
-      }
-
-      .column_right {
-
-      }
-    }
 }

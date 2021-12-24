@@ -14494,29 +14494,26 @@ figure.woocommerce-product-gallery__wrapper {
 }
 
 /* Accordion */
-#vacatures {
-  padding-bottom: 100px;
-}
-
 .accordion {
   font-size: 1rem;
   width: 100%;
-  margin: 0 auto 10px;
+  margin: 0 auto;
   border-radius: 5px;
+  margin-bottom: 10px;
   line-height: 26px;
 }
 
 .accordion-header {
-  font-family: WulkanDisplay Black;
   font-size: 30px;
+  font-family: "Rift demi";
   letter-spacing: 0;
   line-height: 70px;
-  color: #4d4d4d;
+  color: #fff;
   cursor: pointer;
   transition: all 0.3s;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #fff;
 }
 
 .accordion__item .accordion__item {
@@ -14536,7 +14533,7 @@ figure.woocommerce-product-gallery__wrapper {
 .accordion-body__contents {
   padding: 1.5em 0;
   font-family: "Roboto light";
-  color: #4d4d4d;
+  color: #fff;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0;
@@ -14677,13 +14674,12 @@ figure.woocommerce-product-gallery__wrapper {
     text-align: center;
     display: flex;
     align-items: center;
-    transition: all 0.3s ease-in-out;
   }
 
   #main-menu {
     height: -webkit-max-content;
-    height: -moz-max-content;
     height: max-content;
+    height: -moz-max-content;
     width: 100%;
     margin: 0;
   }
@@ -14980,14 +14976,6 @@ figure.woocommerce-product-gallery__wrapper {
 
   .even_project {
     padding-bottom: 25px;
-  }
-
-  #single_project_intro {
-    padding: 75px 0 250px 0;
-  }
-
-  #project_content .column_right::before {
-    display: none;
   }
 }
 @font-face {
@@ -15397,12 +15385,8 @@ a {
   }
 }
 
-.home #wrapper-navbar .nav-link {
-  text-shadow: 0.5px 0.5px #3e3e3e;
-  transition: all 0.3s ease-in-out;
-}
-.home #wrapper-navbar.sticky .nav-link {
-  text-shadow: none;
+#header {
+  position: relative;
 }
 
 .home #header {
@@ -15445,8 +15429,26 @@ a {
   display: block;
 }
 
+.home_slider {
+  height: 92vh;
+}
+
+.home_slide {
+  background-size: cover !important;
+  width: 100%;
+  height: 92vh;
+}
+
+.slider_text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-55%, -50%);
+  text-align: center;
+}
+
 #intro {
-  padding: 100px 0 450px 0;
+  padding: 100px 0px 450px 0px;
 }
 @media (max-width: 1799px) and (min-width: 1024px) {
   #intro {
@@ -16009,65 +16011,6 @@ a {
   }
 }
 
-#header {
-  position: relative;
-}
-
-#projectintro {
-  padding: 50px 0;
-}
-#projectintro .projects button {
-  background: #4d4d4d;
-  font-family: "WulkanDisplay Black", sans-serif;
-  color: #fff;
-  padding: 5px 10px;
-  border: none;
-}
-
-#project_overview .label {
-  position: absolute;
-  top: 15px;
-  left: 25px;
-  background: #4d4d4d;
-  color: #fff;
-  padding: 5px;
-}
-#project_overview .label, #project_overview .project_content {
-  font-family: "WulkanDisplay Black", sans-serif;
-}
-#project_overview .project_content {
-  color: #4d4d4d;
-}
-#project_overview .element-item {
-  margin-bottom: 25px;
-}
-#project_overview .project_img {
-  margin-bottom: 15px;
-}
-
-#single_project_intro {
-  position: relative;
-  padding: 50px 0 250px 0;
-}
-
-#project_content {
-  padding: 50px 0;
-  position: relative;
-  margin-top: -250px;
-}
-#project_content::before {
-  content: "";
-  background: lightgray;
-  width: 60%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-#project_content .column_right {
-  position: relative;
-}
-
 .team_member {
   position: relative;
 }
@@ -16294,13 +16237,12 @@ div.wpforms-container-full .wpforms-form textarea {
     text-align: center;
     display: flex;
     align-items: center;
-    transition: all 0.3s ease-in-out;
   }
 
   #main-menu {
     height: -webkit-max-content;
-    height: -moz-max-content;
     height: max-content;
+    height: -moz-max-content;
     width: 100%;
     margin: 0;
   }
@@ -16597,13 +16539,5 @@ div.wpforms-container-full .wpforms-form textarea {
 
   .even_project {
     padding-bottom: 25px;
-  }
-
-  #single_project_intro {
-    padding: 75px 0 250px 0;
-  }
-
-  #project_content .column_right::before {
-    display: none;
   }
 }
