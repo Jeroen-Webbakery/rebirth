@@ -71,8 +71,9 @@
 				   <?php else : ?>
 				   <a href="/<?php _e('vacatures', 'rebirth'); ?>" class="text_darkgray float-none d-block mb-3"><?php _e('Klik hier voor onze vacatures', 'rebirth'); ?></a>
 					<?php endif; ?>
+
                   <?php if (get_field( 'email' )) : ?>
-                  <a class="d-block text_darkgray social mb-2" href="mailto:<?php the_field( 'email' ); ?>"><i class="far fa-envelope text_darkgray"></i></a>
+                  <a class="d-block text_darkgray social " href="mailto:<?php the_field( 'email' ); ?>"><i class="far fa-envelope text_darkgray"></i></a>
                   <?php endif; ?>
                   <?php if (get_field( 'linkedin' )) : ?>
                   <a class="d-block text_darkgray social mr-2" target="_blank" rel="noopener noreferrer" aria-label="Linkedin" href="<?php the_field( 'linkedin' ); ?>"><i class="fab fa-linkedin text_darkgray"></i></a>
@@ -80,6 +81,7 @@
                   <?php if (get_field( 'phone' )) : ?>
                   <a class="d-block text_darkgray social mr-2" href="tel:<?php the_field( 'phone' ); ?>"><i class="f-18 fas fa-phone-alt text_darkgray"></i></a>
                   <?php endif; ?>
+
                </div>
 									<?php if (get_field( 'function' )) : ?>
 				<?php else : ?>

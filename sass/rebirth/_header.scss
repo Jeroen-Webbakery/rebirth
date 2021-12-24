@@ -93,7 +93,8 @@
   font-family: brandon-grotesque, sans-serif;
   font-size: 24px;
   color: #fff;
-  padding: 5px 0px;
+  padding: 5px 0;
+  font-weight: 500;
 
   @include media-breakpoint-lg() {
     font-size: ratio-vw(24px);
