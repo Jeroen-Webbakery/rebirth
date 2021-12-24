@@ -23,7 +23,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link href="<?php echo get_stylesheet_directory_uri();?>/css/aos.css" rel="stylesheet" type="text/css">
 	<link href="<?php echo get_stylesheet_directory_uri();?>/css/slick.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri();?>/js/isotope.pkgd.min.js"></script>
-	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri();?>/js/js/slick.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri();?>/js/slick.min.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
           integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous">
 	
