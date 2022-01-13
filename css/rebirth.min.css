@@ -16722,7 +16722,7 @@ a {
 
 #to_buy .points li:before {
   content: "\F111";
-  font-family: Font Awesome\ 5 Free;
+  font-family: 'Font Awesome 5 Pro';
   font-size: 18px;
   margin-right: 10px;
   -webkit-transition: all .2s ease-in-out;
