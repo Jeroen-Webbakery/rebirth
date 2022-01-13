@@ -1,5 +1,3 @@
-
-
 <?php
    /**
     * Template Name: Landingspage
@@ -81,7 +79,7 @@
             </div>
          </div>
 		  
-         <div class="col-sm-12 col-lg-4 p-4 bg_lightgray text_darkgray first" data-aos="fade-left" data-aos-duration="2000">
+         <div class="col-sm-12 col-lg-4 p-4 bg_lightgray text_darkgray first" >
 				<?php the_field( 'form' ); ?>
          </div>
       </div>
