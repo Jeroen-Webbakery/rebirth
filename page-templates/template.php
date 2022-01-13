@@ -132,7 +132,7 @@
    <div class="container">
       <div class="row">
       <div class="col-sm-12 order-1">
-         <h3 class="h2 mb-3"><?php the_field( 'p_title' ); ?></h2>
+         <h3 class="h2 mb-3"><?php the_field('p_title' ); ?></h3>
       </div>
       </div>
       <div class="row">
