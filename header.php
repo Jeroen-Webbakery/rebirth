@@ -26,18 +26,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri();?>/js/slick.min.js"></script>
 	    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
           integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190349680-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-	<?php wp_head(); ?>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-190349680-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        gtag('config', 'UA-190349680-1');
+    </script>
 
-  gtag('config', 'UA-190349680-1');
-</script>
 
+    <?php wp_head(); ?>
 
 </head>
 
@@ -47,8 +47,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar">
-
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary" aria-labelledby="main-nav-label">
 

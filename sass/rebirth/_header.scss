@@ -6,41 +6,68 @@
   width: 100%;
   left: 0;
   height: 135px;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 
   @include media-breakpoint-lg() {
     height: ratio-vw(135px);
   }
-}
 
-.sticky,
-.sticky .navbar {
-  background-color: #fff;
-  top: 0 !important;
-  height: 100px !important;
-  transition: all 0.5s;
+  &.scrolled-up {
+    background-color: #fff;
+    top: 0;
+    height: 100px;
 
-  @include media-breakpoint-lg() {
-    height: ratio-vw(100px) !important;
+    @include media-breakpoint-lg() {
+      height: ratio-vw(100px);
+    }
+
+    .navbar {
+      height: 100px;
+
+      @include media-breakpoint-lg() {
+        height: ratio-vw(100px);
+      }
+
+      li {
+        .nav-link {
+          color: #4d4d4d;
+        }
+
+        &.current-menu-item {
+          a {
+            border-bottom: 1px solid #4d4d4d;
+          }
+        }
+      }
+
+      .container {
+        .navbar-brand {
+          svg {
+            height: 65px;
+
+            @include media-breakpoint-lg() {
+              height: ratio-vw(65px);
+            }
+
+            g {
+              g {
+                .cls-1 {
+                  fill: #4d4d4d;
+                  transition: all 0.3s ease-in-out;
+                }
+
+                .cls-2 {
+                  stroke: #4d4d4d;
+                  transition: all 0.3s ease-in-out;
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
   }
-}
-
-.sticky .navbar .container .navbar-brand svg {
-  height: 65px;
-
-  @include media-breakpoint-lg() {
-    height: ratio-vw(65px);
-  }
-}
-
-.sticky .navbar .container .navbar-brand svg g g .cls-1 {
-  fill: #4d4d4d !important;
-  transition: all 0.5s;
-}
-
-.sticky .navbar .container .navbar-brand svg g g .cls-2 {
-  stroke: #4d4d4d !important;
-  transition: all 0.5s;
 }
 
 .sticky .navbar .container .mobilenav ul li a,
@@ -53,7 +80,7 @@
   border-bottom: 1px solid #4d4d4d;
 
   @include media-breakpoint-lg() {
-    border-bottom: ratio-vw(1px) sold #4d4d4d;
+    border-bottom: ratio-vw(1px) solid #4d4d4d;
   }
 }
 
@@ -62,11 +89,9 @@
   width: auto;
 }
 
-
-
 .navbar {
   padding: 0.5rem 1rem;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
   height: 135px;
 
   @include media-breakpoint-lg() {
@@ -75,7 +100,7 @@
 }
 
 .menu-item {
-  margin: 0px 15px;
+  margin: 0 15px;
 
   @include media-breakpoint-lg() {
     margin: 0 ratio-vw(15px);
@@ -95,6 +120,7 @@
   color: #fff;
   padding: 5px 0;
   font-weight: 500;
+  border-bottom: 1px solid transparent;
 
   @include media-breakpoint-lg() {
     font-size: ratio-vw(24px);

@@ -13,13 +13,14 @@
     margin: 0
   }
 
-  .sticky .hamburgerBottom, .sticky .hamburgerMiddle, .sticky .hamburgerTop {
-    background: #4d4d4d
+  .scrolled-up .hamburgerBottom, .scrolled-up .hamburgerMiddle, .scrolled-up .hamburgerTop {
+    background: #4d4d4d;
   }
 
   .hamburger {
     height: 30px;
-    width: 30px
+    width: 30px;
+    z-index: 99;
   }
 
   .hamburgerBottom, .hamburgerMiddle, .hamburgerTop {
@@ -28,7 +29,11 @@
     display: block;
     height: 3px;
     position: absolute;
-    width: 30px
+    width: 30px;
+
+    &.open {
+      background: #4d4d4d;
+    }
   }
 
   .hamburgerBottom, .hamburgerTop {
@@ -74,12 +79,12 @@
     z-index: 20
   }
 
-  #wrapper-navbar, .navbar, .sticky .navbar {
+  #wrapper-navbar, .navbar, .scrolled-up .navbar {
     height: 80px !important;
     top: 0
   }
 
-  .custom-logo-link img, .sticky .navbar .container svg {
+  .custom-logo-link img, .scrolled-up .navbar .container svg {
     max-height: 55px
   }
 
@@ -96,9 +101,7 @@
   }
 
   #main-menu {
-    height: -webkit-max-content;
     height: max-content;
-    height: -moz-max-content;
     margin: 0;
     width: 100%
   }
@@ -109,8 +112,6 @@
 
   .nav-link {
     margin: 0 auto;
-    width: -webkit-max-content;
-    width: -moz-max-content;
     width: max-content
   }
 

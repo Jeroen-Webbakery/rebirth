@@ -52,11 +52,14 @@ $(document).ready(function() {
 		$(".sound-off").addClass("active");
 	});
 
-	var $grid = $('.all_partners').isotope({
+
+
+
+	let $grid = $('.all_partners').isotope({
 		itemSelector: '.element-item'
 	}); // filter functions
 
-	var filterFns = {
+	let filterFns = {
 		// show if name ends with -ium
 		ium: function ium() {
 			var name = $(this).find('.name').text();
@@ -167,26 +170,7 @@ $(document).ready(function() {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-// When the user scrolls the page, execute myFunction
-	window.addEventListener('scroll', myFunction);
 
-// Get the navbar
-var navbar = document.getElementById("wrapper-navbar");
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-let scrollPosition = Math.round(window.scrollY);
-	
-	if (scrollPosition > 100) {
-		navbar.classList.add("sticky");
-	} else {
-		navbar.classList.remove("sticky");
-	}
-}
-})
 
 $(".team-link").click(function() {
 	var newWindowWidth = $(window).width();
@@ -223,63 +207,6 @@ $('a[href*="#"]')
 			}
 		}
 	});
-
-var TxtType = function(el, toRotate, period) {
-	this.toRotate = toRotate;
-	this.el = el;
-	this.loopNum = 0;
-	this.period = parseInt(period, 10) || 2000;
-	this.txt = '';
-	this.tick();
-	this.isDeleting = false;
-};
-
-TxtType.prototype.tick = function() {
-	var i = this.loopNum % this.toRotate.length;
-	var fullTxt = this.toRotate[i];
-
-	if (this.isDeleting) {
-		this.txt = fullTxt.substring(0, this.txt.length - 1);
-	} else {
-		this.txt = fullTxt.substring(0, this.txt.length + 1);
-	}
-
-	this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-	var that = this;
-	var delta = 200 - Math.random() * 100;
-
-	if (this.isDeleting) { delta /= 2; }
-
-	if (!this.isDeleting && this.txt === fullTxt) {
-		delta = this.period;
-		this.isDeleting = true;
-	} else if (this.isDeleting && this.txt === '') {
-		this.isDeleting = false;
-		this.loopNum++;
-		delta = 500;
-	}
-
-	setTimeout(function() {
-		that.tick();
-	}, delta);
-};
-
-window.onload = function() {
-	var elements = document.getElementsByClassName('typewrite');
-	for (var i=0; i<elements.length; i++) {
-		var toRotate = elements[i].getAttribute('data-type');
-		var period = elements[i].getAttribute('data-period');
-		if (toRotate) {
-			new TxtType(elements[i], JSON.parse(toRotate), period);
-		}
-	}
-	// INJECT CSS
-	var css = document.createElement("style");
-	css.type = "text/css";
-	css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-	document.body.appendChild(css);
-};
 
 
 
@@ -331,9 +258,7 @@ $(document).ready(function(){
 			  },
 		]
 	});
-});
 
-$(document).ready(function(){
 	$('.home_slider').slick({
 		infinite: true,
 		autoplay: true,
@@ -344,9 +269,7 @@ $(document).ready(function(){
 		dots: false,
 		arrows: false
 	});
-});
 
-$(document).ready(function(){
 	$('.projects_slider').slick({
 		infinite: true,
 		autoplay: false,
@@ -357,9 +280,7 @@ $(document).ready(function(){
 		prevArrow: $('.prev_project'),
 		nextArrow: $('.next_project'),
 	});
-});
 
-$(document).ready(function () {
 	$('.realestate_slider').slick({
 		infinite: true,
 		autoplay: true,
@@ -371,9 +292,7 @@ $(document).ready(function () {
 		prevArrow: '<span class="slide-arrow prev-arrow"><i class="fas fa-angle-left"></i></span>',
 		nextArrow: '<span class="slide-arrow next-arrow"><i class="fas fa-angle-right"></i></span>'
 	});
-});
 
-$(document).ready(function(){
 	$('.project_slider').slick({
 		infinite: true,
 		autoplay: false,
@@ -384,9 +303,7 @@ $(document).ready(function(){
 		prevArrow: $('.prev_project'),
 		nextArrow: $('.next_project'),
 	});
-});
 
-$(document).ready(function(){
 	$('.oddproject_slider').slick({
 		infinite: true,
 		autoplay: true,
@@ -399,9 +316,7 @@ $(document).ready(function(){
 		prevArrow: '<span class="slide-arrow prev_oddproject"><i class="fas fa-angle-left"></i></span>',
 		nextArrow: '<span class="slide-arrow next_oddproject"><i class="fas fa-angle-right"></i></span>'
 	});
-});
 
-$(document).ready(function(){
 	$('.evenproject_slider').slick({
 		infinite: true,
 		autoplay: true,
@@ -414,11 +329,7 @@ $(document).ready(function(){
 		prevArrow: '<span class="slide-arrow prev_evenproject"><i class="fas fa-angle-left"></i></span>',
 		nextArrow: '<span class="slide-arrow next_evenproject"><i class="fas fa-angle-right"></i></span>'
 	});
-});
 
-
-
-$(document).ready(function () {
 	$('.content_1_slider').slick({
 		infinite: true,
 		autoplay: true,
@@ -430,9 +341,7 @@ $(document).ready(function () {
 		prevArrow: '<span class="slide-arrow prev-arrow"><i class="fas fa-angle-left"></i></span>',
 		nextArrow: '<span class="slide-arrow next-arrow"><i class="fas fa-angle-right"></i></span>'
 	});
-});
 
-$(document).ready(function () {
 	$('.content_2_slider').slick({
 		infinite: true,
 		autoplay: true,
@@ -444,10 +353,7 @@ $(document).ready(function () {
 		prevArrow: '<span class="slide-arrow prev-arrow"><i class="fas fa-angle-left"></i></span>',
 		nextArrow: '<span class="slide-arrow next-arrow"><i class="fas fa-angle-right"></i></span>'
 	});
-});
 
-
-$(document).ready(function(){
 	$('.building_slider').slick({
 		infinite: true,
 		autoplay: true,
@@ -459,9 +365,7 @@ $(document).ready(function(){
 		prevArrow: '<span class="slide-arrow prev-arrow"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">		<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="pijl/blauw" transform="translate(-15.000000, -13.000000)" fill="#FFFFFF"><g id="Group-3" transform="translate(15.000000, 13.000000)"><path d="M10,20 L11.435,18.607 L3.828,11 L20,11 L20,9 L3.828,9 L11.414,1.414 L10,0 C6.339,3.661 3.504,6.496 0,10 C3.966,13.966 1.166,11.166 10,20" id="arrow_left-[#350]"></path></g></g></g></svg></span>',
 		nextArrow: '<span class="slide-arrow next-arrow"><svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="pijl/blauw" transform="translate(-64.000000, -13.000000)" fill="#FFFFFF"><g id="Group-3" transform="translate(15.000000, 13.000000)"><path d="M59,0 L57.565,1.393 L65.172,9 L49,9 L49,11 L65.172,11 L57.586,18.586 L59,20 C62.661,16.339 65.496,13.504 69,10 L59,0" id="arrow_right-[#349]"></path></g></g></g></svg></span>'
 	});
-});
 
-$(document).ready(function(){
 	$('.offices_slider').slick({
 		infinite: true,
 		autoplay: true,
@@ -473,9 +377,7 @@ $(document).ready(function(){
 		prevArrow: '<span class="slide-arrow prev-arrow"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">		<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="pijl/blauw" transform="translate(-15.000000, -13.000000)" fill="#FFFFFF"><g id="Group-3" transform="translate(15.000000, 13.000000)"><path d="M10,20 L11.435,18.607 L3.828,11 L20,11 L20,9 L3.828,9 L11.414,1.414 L10,0 C6.339,3.661 3.504,6.496 0,10 C3.966,13.966 1.166,11.166 10,20" id="arrow_left-[#350]"></path></g></g></g></svg></span>',
 		nextArrow: '<span class="slide-arrow next-arrow"><svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="pijl/blauw" transform="translate(-64.000000, -13.000000)" fill="#FFFFFF"><g id="Group-3" transform="translate(15.000000, 13.000000)"><path d="M59,0 L57.565,1.393 L65.172,9 L49,9 L49,11 L65.172,11 L57.586,18.586 L59,20 C62.661,16.339 65.496,13.504 69,10 L59,0" id="arrow_right-[#349]"></path></g></g></g></svg></span>'
 	});
-});
 
-$(document).ready(function(){
 	$('.plattegrond_slider').slick({
 		infinite: true,
 		autoplay: false,
@@ -485,12 +387,7 @@ $(document).ready(function(){
 		prevArrow: '<span class="slide-arrow prev-arrow"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">		<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="pijl/blauw" transform="translate(-15.000000, -13.000000)" fill="#FFFFFF"><g id="Group-3" transform="translate(15.000000, 13.000000)"><path d="M10,20 L11.435,18.607 L3.828,11 L20,11 L20,9 L3.828,9 L11.414,1.414 L10,0 C6.339,3.661 3.504,6.496 0,10 C3.966,13.966 1.166,11.166 10,20" id="arrow_left-[#350]"></path></g></g></g></svg></span>',
 		nextArrow: '<span class="slide-arrow next-arrow"><svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="pijl/blauw" transform="translate(-64.000000, -13.000000)" fill="#FFFFFF"><g id="Group-3" transform="translate(15.000000, 13.000000)"><path d="M59,0 L57.565,1.393 L65.172,9 L49,9 L49,11 L65.172,11 L57.586,18.586 L59,20 C62.661,16.339 65.496,13.504 69,10 L59,0" id="arrow_right-[#349]"></path></g></g></g></svg></span>'
 	});
-});
 
-
-
-
-$(document).ready(function(){
 	$('.location_slider').slick({
 		infinite: true,
 		autoplay: true,
@@ -502,12 +399,7 @@ $(document).ready(function(){
 		prevArrow: '<span class="slide-arrow prev-arrow"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">		<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="pijl/blauw" transform="translate(-15.000000, -13.000000)" fill="#FFFFFF"><g id="Group-3" transform="translate(15.000000, 13.000000)"><path d="M10,20 L11.435,18.607 L3.828,11 L20,11 L20,9 L3.828,9 L11.414,1.414 L10,0 C6.339,3.661 3.504,6.496 0,10 C3.966,13.966 1.166,11.166 10,20" id="arrow_left-[#350]"></path></g></g></g></svg></span>',
 		nextArrow: '<span class="slide-arrow next-arrow"><svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="pijl/blauw" transform="translate(-64.000000, -13.000000)" fill="#FFFFFF"><g id="Group-3" transform="translate(15.000000, 13.000000)"><path d="M59,0 L57.565,1.393 L65.172,9 L49,9 L49,11 L65.172,11 L57.586,18.586 L59,20 C62.661,16.339 65.496,13.504 69,10 L59,0" id="arrow_right-[#349]"></path></g></g></g></svg></span>'
 	});
-});
 
-
-
-
-$(document).ready(function(){
 	$('.quote_slider').slick({
 		infinite: true,
 		autoplay: true,
@@ -517,8 +409,7 @@ $(document).ready(function(){
 		prevArrow: false,
 		nextArrow: false
 	});
-});
-$(document).ready(function(){
+
 	$('.arrowslider').slick({
 		infinite: true,
 		autoplay: true,
@@ -531,10 +422,6 @@ $(document).ready(function(){
 		nextArrow: '<span class="slide-arrow next-arrow"><svg version="1.1"  id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve"><g><g><path d="M336.226,209.591l-204.8-204.8c-6.78-6.548-17.584-6.36-24.132,0.42c-6.388,6.614-6.388,17.099,0,23.712l192.734,192.734\n' +
 			'\t\t\tL107.294,414.391c-6.663,6.664-6.663,17.468,0,24.132c6.665,6.663,17.468,6.663,24.132,0l204.8-204.8 C342.889,227.058,342.889,216.255,336.226,209.591z"/></g></g></svg>\n</span>'
 	});
-});
-
-
-$(document).ready(function() {
 	 
 	//ACCORDION BUTTON ACTION (ON CLICK DO THE FOLLOWING)
 	$('.accordionButton').click(function() {
@@ -576,5 +463,53 @@ $(document).ready(function() {
 	CLOSES ALL S ON PAGE LOAD
 	********************************************************************************************************************/	
 	$('.accordionContent').hide();
+
+});
+
+
+// Nav menu show on scroll up
+
+document.addEventListener("DOMContentLoaded", function () {
+
+	el_autohide = document.querySelector('#wrapper-navbar');
+
+	// add padding-top to bady (if necessary)
+	navbar_height = document.querySelector('#wrapper-navbar').offsetHeight;
+	document.body.style.paddingTop = '0px';
+
+
+	if (el_autohide) {
+		var last_scroll_top = 0;
+		window.addEventListener('scroll', function () {
+			let scroll_top = window.scrollY;
+			if (scroll_top < last_scroll_top) {
+				el_autohide.classList.remove('scrolled-down');
+				el_autohide.classList.add('scrolled-up');
+			} else {
+				el_autohide.classList.add('scrolled-up');
+
+			}
+			last_scroll_top = scroll_top;
+		});
+		// window.addEventListener
+	}
+
+	window.addEventListener('scroll', myFunction);
+
+	// Get the navbar
+	var navbar = document.getElementById("wrapper-navbar");
+
+
+	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function myFunction() {
+		let scrollPosition = Math.round(window.scrollY);
+
+		if (scrollPosition < 50) {
+			navbar.classList.remove("scrolled-up");
+			navbar.classList.remove("scrolled-down");
+		} else {
+
+		}
+	}
 
 });
