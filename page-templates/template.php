@@ -158,7 +158,7 @@
 
 </section>
 
-<section id="template_content" class="bg_lightgray" data-aos="fade-up" data-aos-duration="2000">
+<section id="template_content" class="bg_lightgray" >
    <div class="container">
       <div class="row">
          <div class="col-sm-12 col-lg-6">
