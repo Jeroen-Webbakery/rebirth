@@ -36,18 +36,10 @@ $container = get_theme_mod( 'understrap_container_type' );
         gtag('config', 'UA-190349680-1');
     </script>
 	
-	    <?php
-    $my_current_lang = apply_filters('wpml_current_language', NULL);
-    if ($my_current_lang == 'nl') {
-        $count_posts = wp_count_posts('vacatures')->publish;
-    }
-    ?>
+
     <script>
         $(document).ready(function () {
-
-            $('.vacatures a').append('<span class="count"><?php echo $count_posts ?></span>');
-            $('.vacature_count').append('<span class="vacature_count"><?php echo $count_posts ?></span>');
-
+            $('.vacatures a').append('<span class="count">3</span>');
         });
     </script>
 
