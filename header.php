@@ -39,7 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     <script>
         $(document).ready(function () {
-            $('.vacatures a').append('<span class="count">3</span>');
+            $('.vacatures a').append('<span class="count">4</span>');
         });
     </script>
 
