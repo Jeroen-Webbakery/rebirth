@@ -35,6 +35,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         gtag('config', 'UA-190349680-1');
     </script>
+	
+	    <?php $count_posts = wp_count_posts('vacatures')->publish; ?>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.vacatures a').append('<span class="count"><?php echo $count_posts ?></span>');
+            $('.vacature_count').append('<span class="vacature_count"><?php echo $count_posts ?></span>');
+
+        });
+    </script>
 
 
     <?php wp_head(); ?>
