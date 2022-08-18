@@ -201,7 +201,11 @@
   .realestate_slider_block {
     margin-top: 15px;
     position: relative;
-    top: unset
+    top: unset;
+
+    img {
+      height: 350px;
+    }
   }
 
   .realestate_slider .next-arrow {
