@@ -14326,10 +14326,9 @@ a {
   margin-top: 5% !important;
 }
 
-.vacatures .nav-link {
+.vacatures {
   position: relative;
 }
-
 .vacatures .count {
   position: absolute;
   top: -5px;
