@@ -30,6 +30,33 @@ a {
   text-decoration: underline
 }
 
+#project_info{
+  margin-top:5%!important;
+}
+
+
+.vacatures .nav-link{
+  position: relative;
+}
+
+.vacatures .count {
+  position: absolute;
+  top: -5px;
+  right: -15px;
+  background: #cc1016;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 .contactform {
   font-display: swap !important;
   font-family: brandon-grotesque, sans-serif !important
