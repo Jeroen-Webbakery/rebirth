@@ -840,7 +840,7 @@ $greenbg: #ccc6bb;
 }
 
 .accordion__item.active:last-child .accordion-header {
-  border-radius: none
+  border-radius: 0;
 }
 
 .accordion:first-child > .accordion__item > .accordion-header {
@@ -1016,10 +1016,7 @@ $greenbg: #ccc6bb;
 }
 
 .vacature_info {
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
-  width: --moz-max-content
 }
 
 .project_slide_img {
@@ -1384,8 +1381,6 @@ $greenbg: #ccc6bb;
   margin-bottom: 4px;
   padding: 3px;
   position: absolute;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content
 }
 
@@ -1400,8 +1395,6 @@ $greenbg: #ccc6bb;
   background-color: #4d4d4d;
   color: #fff;
   padding: 3px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content
 }
 
@@ -1416,7 +1409,7 @@ $greenbg: #ccc6bb;
 }
 
 .side_title_right, ç .side_title_left {
-  font-family: WulkanDisplay Black;
+  font-family: "WulkanDisplay Black", sans-serif;
   font-size: 90px;
   line-height: 72px;
   position: absolute;
