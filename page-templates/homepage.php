@@ -141,8 +141,9 @@ if ( is_front_page() ) {
                             <?php while ( have_rows( 'realestate_slider' ) ) : the_row(); ?>
                                 <?php $slide_img = get_sub_field( 'slide_img' ); ?>
                                 <?php if ( $slide_img ) : ?>
+                                <div>
                                     <?= !empty($slide_img) ? wp_get_attachment_image($slide_img['id'], 'full', false, ['class' => 'realestate_img', 'loading' => 'lazy']) : '' ?>
-
+                                </div>
                                 <?php endif; ?>
                             <?php endwhile; ?>
                         <?php endif; ?>
