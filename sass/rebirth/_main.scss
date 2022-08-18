@@ -182,7 +182,7 @@ $greenbg: #ccc6bb;
 
 .side_title_left,
 .side_title_right {
-  font-family: "WulkanDisplay Black";
+  font-family: "WulkanDisplay Black", sans-serif;
   font-size: 90px;
   line-height: 72px;
   position: absolute;
@@ -788,8 +788,7 @@ $greenbg: #ccc6bb;
   color: #4d4d4d;
   cursor: pointer;
   display: flex;
-  font-display: swap;
-  font-family: WulkanDisplay Black;
+  font-family: "WulkanDisplay Black", sans-serif;
   font-size: 30px;
   letter-spacing: 0;
   line-height: 38px;

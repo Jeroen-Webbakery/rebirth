@@ -16,9 +16,10 @@ $container = get_theme_mod( 'understrap_container_type' );
    <div class="h-100">
       <div class="row h-100" style="">
          <div class="col-sm-12" >
-            <div class="subpage_bg"  style="background: rgb(77, 77, 77);
-               background: linear-gradient(180deg, rgba(77, 77, 77, 0.6) 15%, rgba(255, 255, 255, 0) 100%) , url(<?php echo get_site_url(); ?>/wp-content/uploads/2021/02/betoncentrale.jpg)">	
-            </div>
+             <div class="subpage_bg"
+                  style="background: rgb(77, 77, 77);
+                          background: linear-gradient(180deg, rgba(77, 77, 77, 0.6) 15%, rgba(255, 255, 255, 0) 100%) , url(<?php echo get_stylesheet_directory_uri();?>/assets/images/woontoren.jpg)">
+             </div>
          </div>
       </div>
    </div>
