@@ -13920,9 +13920,6 @@ figure.woocommerce-product-gallery__wrapper {
     position: relative;
     top: unset;
   }
-  .realestate_slider_block img {
-    height: 350px;
-  }
   .realestate_slider .next-arrow {
     right: 0;
   }
@@ -14116,6 +14113,9 @@ figure.woocommerce-product-gallery__wrapper {
   }
   .personal_img {
     height: 300px;
+  }
+  .realestate_slider_block img {
+    height: 350px;
   }
 }
 @font-face {
@@ -16307,9 +16307,6 @@ div.wpforms-container-full .wpforms-form textarea {
     position: relative;
     top: unset;
   }
-  .realestate_slider_block img {
-    height: 350px;
-  }
   .realestate_slider .next-arrow {
     right: 0;
   }
@@ -16503,5 +16500,8 @@ div.wpforms-container-full .wpforms-form textarea {
   }
   .personal_img {
     height: 300px;
+  }
+  .realestate_slider_block img {
+    height: 350px;
   }
 }

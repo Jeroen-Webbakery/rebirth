@@ -203,9 +203,7 @@
     position: relative;
     top: unset;
 
-    img {
-      height: 350px;
-    }
+
   }
 
   .realestate_slider .next-arrow {
@@ -453,5 +451,11 @@
 
   .personal_img {
     height: 300px
+  }
+
+  .realestate_slider_block {
+    img {
+      height: 350px;
+    }
   }
 }
