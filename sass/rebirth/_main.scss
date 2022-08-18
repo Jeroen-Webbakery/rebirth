@@ -452,8 +452,19 @@ $greenbg: #ccc6bb;
   top: -100px;
 
   @include media-breakpoint-lg() {
-    top: - ratio-vw(100px);
+    top:  ratio-vw(-100px);
   }
+
+  img {
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+
+    @include media-breakpoint-lg() {
+      height:  ratio-vw(800px);
+    }
+  }
+
 }
 
 #cta {

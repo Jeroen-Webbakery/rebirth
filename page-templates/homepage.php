@@ -77,7 +77,7 @@ if ( is_front_page() ) {
                                 <h3 class="h2 text_darkgray"><?php the_title(); ?></h3>
                             </div>
                             <div class="col-sm-12 col-lg-9 pl-lg-0 mb-3 mb-lg-1">
-                                <?php echo get_the_post_thumbnail( $post_id, 'post_thumbnail', array( 'class' => 'project_slide_img', 'loading' => 'eager' ) ) ?>
+                                <?php echo get_the_post_thumbnail( get_the_ID(), 'post_thumbnail', array( 'class' => 'project_slide_img', 'loading' => 'eager' ) ) ?>
                             </div>
                             <div class="col-sm-12 col-lg-3 f-24 pt-lg-3 pl-lg-5">
                                 <p class="f-26"><?php echo ($trimmed_content); ?></p>
@@ -110,7 +110,7 @@ if ( is_front_page() ) {
                     <div class="col-sm-12 col-lg-4 my-3 my-lg-1 news_block" data-aos="fade-up" data-aos-duration="1000">
                         <div class="position-relative post_image">
                             <a href="<?php echo get_permalink(); ?>">
-                                <?php echo get_the_post_thumbnail( $post_id, 'post_thumbnail', array( 'class' => 'news_img mb-1' ) ) ?>
+                                <?php echo get_the_post_thumbnail( get_the_ID(), 'post_thumbnail', array( 'class' => 'news_img mb-1' ) ) ?>
                             </a>
                             <p class="date"><?php the_time('d F Y'); ?></p>
                         </div>
@@ -141,7 +141,8 @@ if ( is_front_page() ) {
                             <?php while ( have_rows( 'realestate_slider' ) ) : the_row(); ?>
                                 <?php $slide_img = get_sub_field( 'slide_img' ); ?>
                                 <?php if ( $slide_img ) : ?>
-                                    <img class="realestate_img" src="<?php echo esc_url( $slide_img['url'] ); ?>" alt="<?php echo esc_attr( $slide_img['alt'] ); ?>" />
+                                    <?= !empty($slide_img) ? wp_get_attachment_image($slide_img['id'], 'full', false, ['class' => 'realestate_img', 'loading' => 'lazy']) : '' ?>
+
                                 <?php endif; ?>
                             <?php endwhile; ?>
                         <?php endif; ?>
