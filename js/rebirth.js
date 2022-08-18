@@ -282,7 +282,7 @@ $(document).ready(function(){
 	});
 
 	$('.realestate_slider').slick({
-		infinite: true,
+		infinite: false,
 		autoplay: true,
 		autoplaySpeed: 4000,
 		slidesToShow: 1,
