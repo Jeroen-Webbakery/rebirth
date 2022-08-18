@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php } else { ?>
 				<div class="subpage_bg"
 					style="background: rgb(77, 77, 77);
-               background: linear-gradient(180deg, rgba(77, 77, 77, 0.6) 15%, rgba(255, 255, 255, 0) 100%) , url(<?php echo get_site_url();?>/wp-content/uploads/2021/02/betoncentrale.jpg)">
+               background: linear-gradient(180deg, rgba(77, 77, 77, 0.6) 15%, rgba(255, 255, 255, 0) 100%) , url(<?php echo get_stylesheet_directory_uri();?>/assets/images/woontoren.jpg)">
 				</div>
 				<?php } ?>
 			</div>
