@@ -497,19 +497,24 @@ document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener('scroll', myFunction);
 
 	// Get the navbar
-	var navbar = document.getElementById("wrapper-navbar");
+
 
 
 	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-	function myFunction() {
-		let scrollPosition = Math.round(window.scrollY);
 
-		if (scrollPosition < 50) {
-			navbar.classList.remove("scrolled-up");
-			navbar.classList.remove("scrolled-down");
-		} else {
-
-		}
-	}
 
 });
+
+myFunction();
+
+function myFunction() {
+	var navbar = document.getElementById("wrapper-navbar");
+	let scrollPosition = Math.round(window.scrollY);
+
+	if (scrollPosition < 50) {
+		navbar.classList.remove("scrolled-up");
+		navbar.classList.remove("scrolled-down");
+	} else {
+
+	}
+}

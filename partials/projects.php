@@ -7,7 +7,7 @@ $terms = wp_get_post_terms( get_the_id(),'project-type');
 <div class="col-sm-12 col-lg-6 element-item <?php echo $term->slug ?>">
     <a href="<?php echo get_the_permalink();?>">
     <div class="content">
-        <?php echo get_the_post_thumbnail( $post_id, 'post_thumbnail', array( 'class' => 'project_img' ) ) ?>
+        <?php echo get_the_post_thumbnail( get_the_ID(), 'post_thumbnail', array( 'class' => 'project_img' ) ) ?>
         <p class="label"><?php echo $term->name; ?></p>
 
         <div class="project_content">

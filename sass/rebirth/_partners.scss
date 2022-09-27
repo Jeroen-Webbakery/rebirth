@@ -1,0 +1,22 @@
+.partner {
+  .logo {
+    height: 50px;
+    width: auto;
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    background-color: transparent;
+    border: 1px solid #4d4d4d;
+    color: #4d4d4d;
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding: 3px 10px;
+    line-height: 28px;
+
+    &:hover {
+      background: #4d4d4d;
+      color: #fff;
+    }
+  }
+}

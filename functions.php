@@ -3,6 +3,10 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
+add_theme_support('post-thumbnails');
+// Partners
+require_once(get_stylesheet_directory() . '/inc/post-types/partners.php');
+
 function understrap_remove_scripts()
 {
     wp_dequeue_style('understrap-styles');
@@ -118,7 +122,7 @@ function project_post_type()
         'description' => __('Project news and reviews', 'rebirth'),
         'labels' => $labels,
         // Features this CPT supports in Post Editor
-        'supports' => array('title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields',),
+        'supports' => array('title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields'),
         // You can associate this CPT with a taxonomy or custom taxonomy.
         'taxonomies' => array('Sort'),
         /* A hierarchical CPT is like Pages and can have
@@ -238,7 +242,7 @@ function vacature_post_type()
         'description' => __('Vacatures', 'rebirth'),
         'labels' => $labels,
         // Features this CPT supports in Post Editor
-        'supports' => array('title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields',),
+        'supports' => array('title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields'),
         // You can associate this CPT with a taxonomy or custom taxonomy.
         'taxonomies' => array('Sort'),
         /* A hierarchical CPT is like Pages and can have
