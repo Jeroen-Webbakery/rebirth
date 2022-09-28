@@ -153,6 +153,7 @@ if ( is_front_page() ) {
         </div>
         <p class="side_title_left real text_gray"><?php _e('Proposities', 'rebirth'); ?></p>
     </section>
+
     <section id="cta" data-aos="fade-up" data-aos-duration="1500">
         <?php get_template_part( 'partials/cta', 'content' ); ?>
     </section>

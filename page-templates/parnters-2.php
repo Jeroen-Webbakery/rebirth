@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Partners
+ * Template Name: Partners 2
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published.
  *
@@ -89,10 +89,12 @@ if (is_front_page()) {
                             <div class="col-12 col-md-6 col-lg-4 element-item partner <?php foreach ($terms as $term) {
                                 echo $term->slug;
                             } ?>">
-                                <?php echo get_the_post_thumbnail(get_the_ID(), 'post_thumbnail', array('class' => 'logo', 'loading' => 'lazy')) ?>
-                                <?php the_content(); ?>
                                 <?php if ($link = get_field('partner_website')) : ?>
-                                    <a class="btn" target="_blank" href="<?= $link ?>">Bekijk partner website</a>
+                                    <a href="<?= $link ?>">
+                                        <?php echo get_the_post_thumbnail(get_the_ID(), 'post_thumbnail', array('class' => 'logo', 'loading' => 'lazy')) ?>
+                                    </a>
+                                <?php else : ?>
+                                    <?php echo get_the_post_thumbnail(get_the_ID(), 'post_thumbnail', array('class' => 'logo', 'loading' => 'lazy')) ?>
                                 <?php endif; ?>
                             </div>
 
