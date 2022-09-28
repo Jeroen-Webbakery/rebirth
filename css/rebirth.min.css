@@ -16139,14 +16139,14 @@ div.wpforms-container-full .wpforms-form textarea {
   height: 150px;
   width: auto;
   margin-bottom: 15px;
-  max-width: 250px;
+  max-width: 225px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 @media (max-width: 1799px) and (min-width: 1024px) {
   .partner .logo {
     height: 8.3333333333vw;
-    max-width: 13.8888888889vw;
+    max-width: 12.5vw;
   }
 }
 .partner .btn {
