@@ -91,7 +91,7 @@ if (is_front_page()) {
                             } ?>">
                                 <div class="block">
                                     <?php if ($link = get_field('partner_website')) : ?>
-                                        <a href="<?= $link ?>">
+                                        <a target="_blank" href="<?= $link ?>">
                                             <?php echo get_the_post_thumbnail(get_the_ID(), 'post_thumbnail', array('class' => 'logo', 'loading' => 'lazy')) ?>
                                         </a>
                                     <?php else : ?>
