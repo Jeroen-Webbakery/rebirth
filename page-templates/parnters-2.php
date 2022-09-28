@@ -86,16 +86,18 @@ if (is_front_page()) {
                             $terms = wp_get_post_terms(get_the_id(), 'partner_category');
                             ?>
 
-                            <div class="col-12 col-md-6 col-lg-4 text-center element-item partner <?php foreach ($terms as $term) {
+                            <div class="col-12 col-md-6 col-lg-4 text-center element-item partner second <?php foreach ($terms as $term) {
                                 echo $term->slug;
                             } ?>">
-                                <?php if ($link = get_field('partner_website')) : ?>
-                                    <a href="<?= $link ?>">
+                                <div class="block">
+                                    <?php if ($link = get_field('partner_website')) : ?>
+                                        <a href="<?= $link ?>">
+                                            <?php echo get_the_post_thumbnail(get_the_ID(), 'post_thumbnail', array('class' => 'logo', 'loading' => 'lazy')) ?>
+                                        </a>
+                                    <?php else : ?>
                                         <?php echo get_the_post_thumbnail(get_the_ID(), 'post_thumbnail', array('class' => 'logo', 'loading' => 'lazy')) ?>
-                                    </a>
-                                <?php else : ?>
-                                    <?php echo get_the_post_thumbnail(get_the_ID(), 'post_thumbnail', array('class' => 'logo', 'loading' => 'lazy')) ?>
-                                <?php endif; ?>
+                                    <?php endif; ?>
+                                </div>
                             </div>
 
                             <?php wp_reset_postdata(); ?>

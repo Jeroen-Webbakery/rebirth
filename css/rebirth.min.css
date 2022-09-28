@@ -16139,6 +16139,9 @@ div.wpforms-container-full .wpforms-form textarea {
   height: 50px;
   width: auto;
   margin-bottom: 15px;
+  max-width: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .partner .btn {
   background-color: transparent;
@@ -16152,6 +16155,13 @@ div.wpforms-container-full .wpforms-form textarea {
 .partner .btn:hover {
   background: #4d4d4d;
   color: #fff;
+}
+.partner.second .block {
+  background: #efedea;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 1025px) {

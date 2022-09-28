@@ -3,6 +3,8 @@
     height: 50px;
     width: auto;
     margin-bottom: 15px;
+    max-width: 200px;
+    object-fit: contain;
   }
 
   .btn {
@@ -17,6 +19,16 @@
     &:hover {
       background: #4d4d4d;
       color: #fff;
+    }
+  }
+
+  &.second {
+    .block {
+      background: #efedea;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
