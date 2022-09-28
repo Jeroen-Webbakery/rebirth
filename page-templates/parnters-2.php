@@ -86,7 +86,7 @@ if (is_front_page()) {
                             $terms = wp_get_post_terms(get_the_id(), 'partner_category');
                             ?>
 
-                            <div class="col-12 col-md-6 col-lg-4 element-item partner <?php foreach ($terms as $term) {
+                            <div class="col-12 col-md-6 col-lg-4 text-center element-item partner <?php foreach ($terms as $term) {
                                 echo $term->slug;
                             } ?>">
                                 <?php if ($link = get_field('partner_website')) : ?>
