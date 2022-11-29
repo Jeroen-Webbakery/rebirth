@@ -40,10 +40,10 @@ $container = get_theme_mod('understrap_container_type');
         gtag('config', 'UA-190349680-1');
     </script>
 
-
+<?php $count_posts = wp_count_posts( 'vacatures' )->publish; ?>
     <script>
         $(document).ready(function () {
-            $('.vacatures a').append('<span class="count">4</span>');
+            $('.vacatures a').append('<span class="count"><?= $count_posts ?></span>');
         });
     </script>
 
