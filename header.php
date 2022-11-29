@@ -40,10 +40,13 @@ $container = get_theme_mod('understrap_container_type');
         gtag('config', 'UA-190349680-1');
     </script>
 
-<?php $count_posts = wp_count_posts( 'vacatures' )->publish; ?>
+<?php
+$current_lang = apply_filters( 'wpml_current_language', null );
+
+$count_posts = wp_count_posts( 'vacatures', apply_filters( 'wpml_current_language', $current_lang ))->publish; ?>
     <script>
         $(document).ready(function () {
-            $('.vacatures a').append('<span class="count"><?= $count_posts ?></span>');
+            $('.vacatures a').append('<span class="count"><?= $count_posts  ?></span>');
         });
     </script>
 
