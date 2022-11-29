@@ -40,7 +40,7 @@ $container = get_theme_mod('understrap_container_type');
         gtag('config', 'UA-190349680-1');
     </script>
 
-<?php
+
 
 
 
