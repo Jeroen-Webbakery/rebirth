@@ -43,12 +43,7 @@ $container = get_theme_mod('understrap_container_type');
 <?php
 
 
-$count_posts = wp_count_posts( 'vacatures', apply_filters( 'wpml_current_language', 'nl' ))->publish; ?>
-    <script>
-        $(document).ready(function () {
-            $('.vacatures a').append('<span class="count"><?= $count_posts  ?></span>');
-        });
-    </script>
+
 
 
     <?php wp_head(); ?>
