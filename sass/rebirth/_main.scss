@@ -731,7 +731,6 @@ $greenbg: #ccc6bb;
       cursor: none !important;
     }
 
-
     .slider_text {
       margin-top: 200px;
       position: absolute;
@@ -760,6 +759,18 @@ $greenbg: #ccc6bb;
 
       &.active {
         display: block;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      height: 100svh;
+
+      .header_video {
+        height: 100svh;
+      }
+
+      .slider_text {
+        margin-top: 150px;
       }
     }
   }

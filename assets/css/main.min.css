@@ -15013,6 +15013,17 @@ a {
 .home #header .sound-off.active, .home #header .sound-on.active {
   display: block;
 }
+@media only screen and (max-width: 768px) {
+  .home #header {
+    height: 100svh;
+  }
+  .home #header .header_video {
+    height: 100svh;
+  }
+  .home #header .slider_text {
+    margin-top: 150px;
+  }
+}
 
 .accordion {
   border-radius: 5px;
