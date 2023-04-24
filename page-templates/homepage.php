@@ -28,17 +28,13 @@ if ( is_front_page() ) {
                     </video>
                     <a class="sound-on"><i class="fas fa-volume-up"></i></a>
                     <a class="sound-off active"><i class="fas fa-volume-slash"></i></a>
-                    <div class="slider_text w-100 text-white">
+                    <div class="col-12 col-md-6 slider_text w-100 text-white">
                         <h1 class="pb-3"><?php the_field( 'text_over_slider' ); ?></h1>
                         <?php $button_link = get_field( 'button_link' ); ?>
                         <a class="btn btn_gray readmore no-decoration block mx-auto" href="<?php echo esc_url( $button_link['url'] ); ?>"><?php the_field( 'button_text' ); ?><i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
-                <div class="slider_text w-100 text-white">
-                    <h1 class="pb-3"><?php the_field( 'text_over_slider' ); ?></h1>
-                    <?php $button_link = get_field( 'button_link' ); ?>
-                    <a class="btn btn_gray readmore no-decoration block mx-auto" href="<?php echo esc_url( $button_link['url'] ); ?>"><?php the_field( 'button_text' ); ?><i class="fas fa-chevron-right"></i></a>
-                </div>
+
             </div>
         </div>
         <p class="side_title_left home text_gray"><?php _e('Welkom bij reBirth', 'rebirth'); ?></p>

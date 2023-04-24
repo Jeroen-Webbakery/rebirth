@@ -1,10 +1,4 @@
 .DS_Store
 node_modules
 /node_modules
-gulpconfig.json
-Package-lock.json
-yarn.lock
-acfe-json
-acf-json
-acfe-php
-acf-php
+package-lock.json

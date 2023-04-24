@@ -1,5 +1,5 @@
 <?php
-$terms = wp_get_post_terms( get_the_id(),'project-type');
+$terms = wp_get_post_terms( get_the_id(),'investment-type');
     foreach ( $terms as $term ) { 
     $term_link = get_term_link( $term );
 ?>

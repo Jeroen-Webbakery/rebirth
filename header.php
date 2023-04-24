@@ -19,11 +19,7 @@ $container = get_theme_mod('understrap_container_type');
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="stylesheet" href="https://use.typekit.net/xxn4iwc.css">
-    <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.6.0.min.js"></script>
-    <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/aos.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/slick.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/slick.min.js"></script>
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
           integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -39,13 +35,6 @@ $container = get_theme_mod('understrap_container_type');
 
         gtag('config', 'UA-190349680-1');
     </script>
-
-
-
-
-
-
-
     <?php wp_head(); ?>
 
 </head>

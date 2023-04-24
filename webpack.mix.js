@@ -14,9 +14,10 @@ let mix = require('laravel-mix');
 
 mix.setPublicPath('./')
 
+
 // Account
-mix.js('js/rebirth.js', 'js/rebirth.min.js')
-    .sass('sass/rebirth/rebirth.scss', 'css/rebirth.min.css')
+mix.js('assets/js/main.js', 'assets/js/main.min.js')
+    .sass('sass/rebirth/rebirth.scss', 'assets/css/main.min.css')
     .options({
         processCssUrls: false,
     });
@@ -25,9 +26,24 @@ mix.js('js/rebirth.js', 'js/rebirth.min.js')
 if (mix.inProduction()) {
     mix.setPublicPath(`./`);
     mix.version([
-        'js/rebirth.min.js',
-        'css/rebirth.min.css',
+        'assets/js/rebirth.min.js',
+        'assets/css/rebirth.min.css',
     ]);
 }
 
+
+const domain = 'rebirth.test'; // <= EDIT THIS
+const homedir = require('os').homedir();
+
+// The mix script:
+mix.browserSync({
+    proxy: 'https://' + domain,
+    host: domain,
+    open: 'external',
+    https: {
+        key: homedir + '/.config/valet/Certificates/' + domain + '.key',
+        cert: homedir + '/.config/valet/Certificates/' + domain + '.crt'
+    },
+    notify: true, //Enable or disable notifications
+})
 
