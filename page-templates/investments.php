@@ -32,12 +32,15 @@ get_header();
                     <?php the_field('intro'); ?>
 
                     <div class="button-group projects filters-button-group">
-                        <button class="button is-checked" data-filter="*"><?php _e('Alle', 'rebirth'); ?></button>
                         <?php if ($terms = get_terms(array(
                             'post_type' => 'investments',
                             'taxonomy' => 'investment-type',
                             'hide_empty' => true,
                         ))) :
+                            ?>
+                        <button class="button is-checked" data-filter="*"><?php _e('Alle', 'rebirth'); ?></button>
+
+                        <?php
                             foreach ($terms as $term) : ?>
                                 <button id="postfilters" class="button"
                                         data-filter=".<?php echo strtolower($term->slug) ?>"><?php echo $term->name ?></button>
